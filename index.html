@@ -4,233 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Евакуатор Мукачево</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      color: #222;
-      background: #f9f9f9;
-      line-height: 1.6;
-    }
-
-    header.banner {
-      background: #2c3e50;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    header.banner h1 {
-      margin: 0 0 20px;
-      font-size: 8vw; /* адаптивний розмір */
-      max-width: 90%;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    header.banner button {
-      background: #e74c3c;
-      color: white;
-      border: none;
-      padding: 14px 28px;
-      font-size: 16px;
-      cursor: pointer;
-      border-radius: 5px;
-      transition: background 0.3s ease;
-    }
-
-    header.banner button:hover {
-      background: #c0392b;
-    }
-
-    section {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 40px 20px;
-    }
-
-    .advantages {
-      background: #f9f9f9;
-    }
-
-    .advantages h2 {
-      text-align: center;
-      margin-bottom: 30px;
-      font-size: 28px;
-    }
-
-    .advantage-list {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-    }
-
-    .advantage {
-      background: white;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      padding: 20px;
-      text-align: center;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-    }
-
-    .advantage .icon {
-      font-size: 32px;
-      margin-bottom: 12px;
-    }
-
-    .advantage h3 {
-      margin-bottom: 10px;
-      font-size: 20px;
-      color: #333;
-    }
-
-    .advantage p {
-      font-size: 15px;
-      color: #555;
-    }
-
-    .gallery h2 {
-      text-align: center;
-      margin-bottom: 30px;
-      font-size: 28px;
-    }
-
-    .gallery .photo-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-      margin-top: 20px;
-    }
-
-    .gallery img {
-      width: 100%;
-      height: auto;
-      border-radius: 5px;
-      object-fit: cover;
-    }
-
-    .faq-list {
-      background: #f9f9f9;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-      transition: box-shadow 0.3s ease;
-      padding: 14px 28px;
-    }
-
-    .faq h2 {
-      text-align: center;
-      font-size: 28px;
-      margin-bottom: 30px;
-    }
-
-    .faq-item {
-      border-bottom: 1px solid #ddd;
-    }
-
-    .faq-question {
-      color: #000;
-      width: 100%;
-      text-align: left;
-      background: none;
-      border: none;
-      font-weight: bold;
-      font-size: 18px;
-      padding: 15px 0;
-      cursor: pointer;
-      outline: none;
-      position: relative;
-    }
-
-    .faq-question::after {
-      content: '+';
-      position: absolute;
-      right: 0;
-      font-size: 22px;
-      transition: transform 0.2s ease;
-    }
-
-    .faq-item.active .faq-question::after {
-      content: '−';
-      transform: rotate(180deg);
-    }
-
-    .faq-answer {
-      display: none;
-      padding-bottom: 15px;
-      color: #555;
-      font-size: 16px;
-    }
-
-    .faq-item.active .faq-answer {
-      display: block;
-    }
-
-    .reviews h2 {
-      text-align: center;
-      font-size: 28px;
-      margin-bottom: 30px;
-    }
-
-    .review {
-      background: white;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      padding: 16px 18px;
-      margin-bottom: 20px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-      transition: box-shadow 0.3s ease;
-    }
-
-    .review:hover {
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    }
-
-    .stars {
-      color: #f1c40f; /* золота зірка */
-      font-size: 16px;
-      letter-spacing: 1px;
-    }
-
-    footer.footer {
-      background: #34495e;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-
-    footer.footer a {
-      color: #1abc9c;
-      text-decoration: none;
-    }
-
-    /* 📱 Мобільна адаптація */
-    @media (max-width: 600px) {
-      header.banner h1 {
-        font-size: 7vw;
-      }
-
-      header.banner button {
-        width: 100%;
-        max-width: 300px;
-        padding: 14px;
-        font-size: 18px;
-      }
-
-      section {
-        padding: 30px 15px;
-      }
-
-      .advantage-list {
-        grid-template-columns: 1fr;
-      }
-
-      .gallery .photo-grid {
-        grid-template-columns: 1fr;
-      }
-    }
+    
   </style>
 </head>
 <body>
@@ -246,21 +22,21 @@
       <div class="advantage">
         <div class="icon">📞</div>
         <h3>Без зайвих слів</h3>
-        <p>Не мусиш нічого пояснювати 10 разів — сказав де ти, і ми вже їдемо.</p>
+        <p>Не мусиш нічого пояснювати 10 разів. Сказав, де ти, – і ми вже їдемо.</p>
       </div>
       <div class="advantage">
         <div class="icon">⏱️</div>
         <h3>Швидкий виїзд</h3>
-        <p>В середньому приїжджаємо за 20–30 хв по місту і ближніх селах.</p>
+        <p>У середньому приїжджаємо за 20–30 хв по місту і навколишніх селах.</p>
       </div>
       <div class="advantage">
         <div class="icon">💳</div>
-        <h3>Оплата як зручно</h3>
-        <p>Карта, готівка, переказ — як скажеш. Без мороки.</p>
+        <h3>Оплата, як зручно тобі</h3>
+        <p>Карта, готівка, переказ — обирай будь-який варіант.</p>
       </div>
       <div class="advantage">
         <div class="icon">🤝</div>
-        <h3>Де треба — там і будемо</h3>
+        <h3>Де треба, там і будемо</h3>
         <p>Мукачево, Закарпаття, вся Україна і навіть Європа — домовимось без проблем.</p>
       </div>
     </div>
@@ -269,10 +45,12 @@
   <section class="gallery">
     <h2>Наш евакуатор в роботі</h2>
     <div class="photo-grid">
-      <img src="https://github.com/Navigator12/evacuator-mukachevo/blob/main/assets/1.jpg?raw=true" alt="Евакуатор 1">
-      <img src="https://github.com/Navigator12/evacuator-mukachevo/blob/main/assets/2.jpg?raw=true" alt="Евакуатор 2">
-      <img src="https://github.com/Navigator12/evacuator-mukachevo/blob/main/assets/3.jpg?raw=true" alt="Евакуатор 3">
-      <img src="https://github.com/Navigator12/evacuator-mukachevo/blob/main/assets/4.jpg?raw=true" alt="Евакуатор 4">
+      <img src="assets/1.jpg" alt="Евакуатор 1">
+      <img src="assets/2.jpg" alt="Евакуатор 2">
+      <img src="assets/3.jpg" alt="Евакуатор 3">
+      <img src="assets/4.jpg" alt="Евакуатор 4">
+      <img src="assets/5.jpg" alt="Евакуатор 5">
+      <img src="assets/6.jpg" alt="Евакуатор 6">
     </div>
   </section>
 
@@ -306,7 +84,7 @@
       <div class="faq-item">
         <button class="faq-question">Можна одразу дізнатись ціну?</button>
         <div class="faq-answer">
-          <p>Так, просто скажи звідки й куди, і скину суму.</p>
+          <p>Так, просто скажи, звідки й куди. Ми одразу розраховуємо та озвучуємо суму.</p>
         </div>
       </div>
     </div>
@@ -319,7 +97,7 @@
         <strong>Олег, Мукачево</strong>
         <span class="stars">★★★★★</span>
       </div>
-      <p>Застряг біля моста. Подзвонив — приїхали через 25 хв, забрали без зайвих слів. Респект!</p>
+      <p>Застряг біля моста. Подзвонив — приїхали через 25 хв, забрали без проблем. Респект!</p>
     </div>
     <div class="review">
       <div class="review-header">
@@ -333,21 +111,21 @@
         <strong>Михайло, Мукачево</strong>
         <span class="stars">★★★★★</span>
       </div>
-      <p>Нормальні хлопці, ніякого "перетелефоную", все чітко. Порадив знайомим.</p>
+      <p>Нормальні хлопці, ніякого "перезвоню", все зразу рішили. Рекомендую однозначно!</p>
     </div>
     <div class="review">
       <div class="review-header">
         <strong>Тетяна, Свалява</strong>
         <span class="stars">★★★★★</span>
       </div>
-      <p>Приїхали швидше, ніж я встигла випити каву. Дуже ввічливі, все пояснили.</p>
+      <p>Приїхали швидко, спокійно все пояснили й зробили свою роботу за адекватні гроші.</p>
     </div>
     <div class="review">
       <div class="review-header">
         <strong>Віктор, Чинадійово</strong>
         <span class="stars">★★★★★</span>
       </div>
-      <p>Навіть не думав що все буде так просто — подзвонив, через 20 хв уже вантажили авто.</p>
+      <p>Всьо просто, скоро. Позвонив і через 20 минут вже грузили машину.</p>
     </div>
   </section>
 
@@ -355,14 +133,6 @@
     <p>Телефон: <a href="tel:+380971006262">+38 (097) 100-62-62</a></p>
   </footer>
 
-  <script>
-    const faqItems = document.querySelectorAll('.faq-item');
-
-    faqItems.forEach(item => {
-        item.querySelector('.faq-question').addEventListener('click', () => {
-            item.classList.toggle('active');
-        });
-    });
-  </script>
+  <script src="index.js"></script>
 </body>
 </html>
